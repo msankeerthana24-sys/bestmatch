@@ -1,0 +1,6 @@
+services:
+- type: web
+  name: bestmatch
+  env: node
+  buildCommand: npm run install:all && npm run build
+  startCommand: node server/index.js
